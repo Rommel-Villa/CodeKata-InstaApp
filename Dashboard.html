@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>My Instagram Page</title>
+    </head>
+<body>
+    <strong>To Do My Instagram Page</strong>
+    <div id="instagramContentId">
+        <a href="#" data-bind="click:RefreshItems">Refresh Popular</a> <br />
+        Image Size &nbsp;
+        <div><input type="radio" name="imageSize" value="thumb" data-bind="checked: imageRes" /> Thumbs</div>
+        <div><input type="radio" name="ImageSize" value="low" data-bind="checked: imageRes" /> Low</div>
+        <div><input type="radio" name="ImageSize" value="standard" data-bind="checked: imageRes" /> Standard</div>
+        <div data-bind="foreach:IGImages">
+            <div>
+                <img data-bind="attr:{src:$data.url}" />
+                <p>This image has <span data-bind="text:$data.likeCount"></span> likes.</p>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="/Scripts/jquery-2.1.1.js"></script>
+    <script src="/Scripts/knockout-3.1.0.js"></script>
+    <script src="/Scripts/Dashboard.js"></script>
+</html>

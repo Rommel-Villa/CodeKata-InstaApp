@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My App</title>
+</head>
+<body>
+    <div id="loginSection">
+        <div>
+            <b>Instagram ClientId:</b>&nbsp;<input type="text" data-bind="value:ClientID" />
+        </div>
+        <div>
+            <b>Instagram RedirectUrl:</b>&nbsp;<input type="text" data-bind="value:RedirectUrl" />
+        </div>
+        <br/> 
+        <br/>
+        <button data-bind="click:LoginClick">Login</button>
+    </div>
+
+        <script src="/Scripts/jquery-2.1.1.js"></script>
+        <script src="/Scripts/knockout-3.1.0.js"></script>
+        <script src="/Scripts/index.js"></script>
+</body>
+</html>
